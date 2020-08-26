@@ -3,7 +3,7 @@
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
-  <script src="js/je"></script>
+  <script src="js/jquery-3.5.1.js"></script>
   <script src="js/scripts.js"></script>
   <title>Movie Tickets</title>
 </head>
@@ -18,19 +18,19 @@
         <div class="form-group">
           <div class="radio">
             <label>
-              <input type="radio" name="instrument" value="panther" checked>
+              <input type="radio" name="movieName" value="panther" checked>
               Black Panthers
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="instrument" value="batman">
+              <input type="radio" name="movieName" value="batman">
               Batman
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="instrument" value="superman">
+              <input type="radio" name="movieName" value="superman">
               Superman
             </label>
           </div>
@@ -41,19 +41,19 @@
         <div class="form-group">
           <div class="radio">
             <label>
-              <input type="radio" name="sport" value="matinee" checked>
+              <input type="radio" name="movieTime" value="matinee" checked>
               Matinee
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="sport" value="midnight">
+              <input type="radio" name="movieTime" value="midnight">
               Midnight
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="sport" value="weekend">
+              <input type="radio" name="movieTime" value="weekend">
               Week-End
             </label>
           </div>
@@ -64,19 +64,19 @@
           <div class="form-group">
             <div class="radio">
               <label>
-                <input type="radio" name="season" value="age1" checked>
+                <input type="radio" name="viewerAge" value="age1" checked>
                 7 to 17
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="season" value="age2">
+                <input type="radio" name="viewerAge" value="age2">
                 18 to 45
               </label>
             </div>
             <div class="radio">
               <label>
-                <input type="radio" name="season" value="age3">
+                <input type="radio" name="viewerAge" value="age3">
                 45 to 100
               </label>
             </div>
@@ -85,7 +85,9 @@
       </div>
       <button type="submit" class="btn btn-danger">Submit</button>
           </form>
-   
+          <div id="ticketPriceDisplay">
+
+          </div>
           </div>
           </div>
       </div>
